@@ -7,8 +7,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/file',function(){
+Route::get('/file', function () {
     return view('files');
 });
 
-Route::post('/file',[FileController::class,'fileUpload']);
+Route::post('/file', [FileController::class,'fileUpload']);
